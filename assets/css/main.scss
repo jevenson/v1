@@ -17,8 +17,8 @@ body {
     align-items: center;
 
     .container {
-        width: calc(100% - #{ $standard-margin * 2 });
         max-width: $site-width;
+        width: calc(100% - #{ $standard-margin * 2 });
         margin: 0 $standard-margin;
     }
 }
