@@ -1,0 +1,54 @@
+header {
+    width: 100%;
+    background-color: $color-white;
+    color: $color-primary;
+    padding: 50px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        width: 100%;
+        max-width: $site-width;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: $mobile-width) {
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                margin-bottom: 25px;
+            }
+        }
+
+        h1 {
+            margin: 0;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: inherit;
+    }
+
+    nav {
+
+        a {
+            text-decoration: none;
+            color: $color-text-link;
+            font-size: 1.2em;
+            margin: 0 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
