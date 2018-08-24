@@ -22,3 +22,11 @@ body {
         margin: 0 $standard-margin;
     }
 }
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: $color-text-link;
+}
