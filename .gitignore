@@ -1,6 +1,7 @@
 # Hugo default output directory
 /public
-/resources
+# /resources adding this folder to source so that deploys to netlify will work
+# See this GitHub issue: https://github.com/netlify/build-image/issues/182
 
 ## OS Files
 # Windows
