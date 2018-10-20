@@ -1,3 +1,13 @@
 {{ define "main" }}
-    {{ .Content }}
+    <div class="row">
+        <img class="portrait" src="images/josh.jpg" />
+        <h1 class="tagline">{{ .Content }}</h1>
+    </div>
+
+    {{ range .Pages }}
+        {{ if eq .Type "blog" }}
+            <h3>{{ .Title }}</h3>
+            {{ .Content }}
+        {{ end }}
+    {{ end }}
 {{ end }}

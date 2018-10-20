@@ -1,9 +1,14 @@
-$color-primary: #FF7400;
-$color-secondary: #008BFF;
-$color-white: #FFFFFF;
-$color-background: #F5F5F5;
+$colors: (
+    'primary': #FF7400,
+    'secondary': #008BFF,
+    'white': #FFFFFF,
+    'background': #F5F5F5,
+    'text-link': #0000FF
+);
 
-$color-text-link: #0000FF;
+@function color($key: 'primary') {
+    @return map-get($colors, $key);
+}
 
 $site-width: 800px;
 $mobile-width: 700px;

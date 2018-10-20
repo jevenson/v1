@@ -1,5 +1,13 @@
 @import "./_variables";
+
+// Layouts
+@import "./index";
+
+// Partials
 @import "./_header";
+
+// ShortCodes
+@import "./shortcodes/colored-text";
 
 * {
     font-family: 'Courier New', Courier, monospace;
@@ -8,8 +16,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: $color-background;
-    border-top: 10px solid $color-primary;
+    background-color: color('background');
+    border-top: 10px solid color('primary');
 
     display: flex;
     flex-direction: column;
@@ -28,5 +36,5 @@ a {
 }
 
 a:visited {
-    color: $color-text-link;
+    color: color('text-link');
 }
