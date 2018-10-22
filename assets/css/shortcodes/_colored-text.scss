@@ -1,5 +1,6 @@
 @import "./../_variables";
 
 .colored-text {
-    color: color('primary')
+    color: color('primary');
+    display: inline-block;
 }
