@@ -1,12 +1,17 @@
 <header>
     <div class="container">
-        <!-- <a href="{{ .Site.BaseURL }}" class="site-title">
-            <h1>{{ lower .Site.Title }}</h1>
-        </a> -->
         <nav>
-            {{ range .Site.Menus.main }}
-            <a href="{{ .URL }}">{{ lower .Title }}</a>
-            {{ end }}
+            <a href="{{ .Site.BaseURL }}" class="site-title">
+                <h1>{{ lower .Site.Title }}</h1>
+            </a>
+            <ul class="nav-items">
+                {{ range .Site.Menus.main }}
+                <li><a href="{{ .URL }}">{{ lower .Title }}</a></li>
+                {{ end }}
+            </ul>
         </nav>
+        <div class="portrait-container">
+            <img class="portrait" src="images/josh.jpg" />
+        </div>
     </div>
 </header>

@@ -1,12 +1,4 @@
 {{ define "main" }}
-    <div class="hero-container">
-        <img class="portrait" src="images/josh.jpg" />
-
-        {{ with  .OutputFormats.Get "text" -}}
-            <h1 class="tagline">{{ .Content }}</h1>
-        {{- end }}
-    </div>
-
     {{ range .Pages }}
         {{ if eq .Type "blog" }}
             <h3>{{ .Title }}</h3>
