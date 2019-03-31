@@ -1,9 +1,7 @@
 <header>
     <div class="container">
         <nav>
-            <a href="/" class="site-title">
-                <h1>{{ lower .Site.Title }}</h1>
-            </a>
+            <a href="/" class="site-title">{{ lower .Site.Title }}</a>
             <ul class="nav-items">
                 {{ range .Site.Menus.main }}
                 <li><a href="{{ .URL }}">{{ lower .Title }}</a></li>

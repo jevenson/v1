@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ .Page.Title }} - {{ .Site.Title }}</title>
-    {{ $style := resources.Get "/css/main.scss" | toCSS | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-</head>
-<body>
-    {{ partial "header" . }}
+{{ define "main" }}
     {{ .Content }}
-</body>
-</html>
+
+    {{ range .Pages }}
+        {{ partial "blog-post-summary" . }}
+    {{ end }}
+{{ end }}

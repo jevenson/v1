@@ -1,9 +1,7 @@
 {{ define "main" }}
     {{ range .Pages }}
         {{ if eq .Type "blog" }}
-            <h3>{{ .Title }}</h3>
-
-            {{ .Content }}
+            {{ partial "blog-post-summary" . }}
         {{ end }}
     {{ end }}
 {{ end }}

@@ -29,7 +29,7 @@ header {
             width: 100%;
         }
 
-        h1 {
+        .site-title {
             text-decoration: none;
             font-weight: bold;
             color: color('background');
@@ -84,8 +84,8 @@ header {
         width: 150px;
 
         @media (max-width: $headerMobileSize) {
-            height: 30vw;
-            width: 30vw;
+            height: 20vw;
+            width: 20vw;
         }
     }
 

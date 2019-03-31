@@ -2,8 +2,8 @@ $colors: (
     'primary': rgb(227, 108, 10), // #FF7400,
     'secondary': #008BFF,
     'white': #FFFFFF,
-    'background': #F5F5F5,
-    'text-link': #0000FF
+    'black': #000,
+    'background': #F5F5F5
 );
 
 @function color($key: 'primary') {
