@@ -36,7 +36,6 @@ header {
 
             @media (max-width: $mobile-width) {
                 text-align: center;
-                font-size: 1.5rem;
             }
         }
 
@@ -61,11 +60,7 @@ header {
                     text-decoration: none;
                     font-weight: bold;
                     color: color('background');
-                    font-size: 1.3rem;
-
-                    @media (max-width: $mobile-width) {
-                        font-size: 0.8rem;
-                    }
+                    font-size: 1rem;
                 }
 
                 a:hover {
