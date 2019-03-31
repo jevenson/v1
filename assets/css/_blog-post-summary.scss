@@ -1,6 +1,10 @@
 .blog-post-summary-container {
     width: 70%;
 
+    @media (max-width: $mobile-width) {
+        width: 100%;
+    }
+
     h3 {
         color: color("black");
     }

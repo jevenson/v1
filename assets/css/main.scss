@@ -5,6 +5,7 @@
 
 // Partials
 @import "./_header";
+@import "./_blog-post";
 @import "./_blog-post-summary";
 
 // ShortCodes
@@ -12,6 +13,10 @@
 
 * {
     font-family: 'Courier New', Courier, monospace;
+}
+
+html {
+    font-size: 20px;
 }
 
 body {
@@ -29,6 +34,41 @@ body {
         max-width: $site-width;
         width: calc(100% - #{ $standard-margin * 2 });
         margin: 0 $standard-margin;
+    }
+}
+
+h1 {
+    font-size: 1.75rem;
+
+    @media (max-width: $mobile-width) {
+        font-size: 1.25rem;
+    }
+}
+
+h2 {
+    font-size: 1.6rem;
+
+    @media (max-width: $mobile-width) {
+        font-size: 1rem;
+    }
+}
+
+h3 {
+    font-size: 1.5rem;
+
+    @media (max-width: $mobile-width) {
+        font-size: 1rem;
+    }
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    @media (max-width: $mobile-width) {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
     }
 }
 

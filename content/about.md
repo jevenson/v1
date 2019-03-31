@@ -5,4 +5,4 @@ draft: false
 menu: ["main", "footer"]
 ---
 
-About Page
+Hi, I'm Josh and I'm currently building this portfolio site.
