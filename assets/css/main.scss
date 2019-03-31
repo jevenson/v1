@@ -5,6 +5,7 @@
 
 // Partials
 @import "./_header";
+@import "./_footer";
 @import "./_blog-post";
 @import "./_blog-post-summary";
 
@@ -13,10 +14,12 @@
 
 * {
     font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
 }
 
 html {
     font-size: 20px;
+    height: 100vh;
 
     @media (max-width: $mobile-width) {
         font-size: 16px;
@@ -24,10 +27,13 @@ html {
 }
 
 body {
+    $top-border: 10px;
+
     margin: 0;
     padding: 0;
     background-color: color('background');
-    border-top: 10px solid lighten(color('primary'), 20%);
+    border-top: $top-border solid lighten(color('primary'), 20%);
+    min-height: 100vh;
 
     display: flex;
     flex-direction: column;
@@ -36,8 +42,16 @@ body {
 
     .container {
         max-width: $site-width;
-        width: calc(100% - #{ $standard-margin * 2 });
-        margin: 0 $standard-margin;
+        width: calc(100% - #{ $standard-spacing * 2 });
+        margin: 0 $standard-spacing;
+        flex: 1;
+
+        .main {
+
+            @media (min-width: $mobile-width - 1) {
+                width: 75%;
+            }
+        }
     }
 }
 

@@ -1,0 +1,12 @@
+<footer>
+    <div class="container">
+        <span>
+            &copy; {{ .Date.Format "2006" }} {{ lower .Site.Title }}
+        </span>
+        <ul class="nav-items">
+            {{ range .Site.Menus.footer }}
+                <li><a href="{{ .URL }}">{{ lower .Title }}</a></li>
+            {{ end }}
+        </ul>
+    </div>
+</footer>

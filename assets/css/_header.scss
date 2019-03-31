@@ -2,7 +2,7 @@ header {
     width: 100%;
     color: color('primary');
     background-color: color('primary');
-    padding: $tight-margin 0;
+    padding: $tight-spacing 0;
 
     display: flex;
     align-items: center;
@@ -32,7 +32,7 @@ header {
             font-weight: bold;
             color: color('background');
             font-size: 2rem;
-            margin: 0 0 $tight-margin 0;
+            margin: 0 0 $tight-spacing 0;
 
             @media (max-width: $mobile-width) {
                 text-align: center;
@@ -50,7 +50,7 @@ header {
             }
 
             li {
-                margin-right: $standard-margin;
+                margin-right: $standard-spacing;
 
                 @media (max-width: $mobile-width) {
                     margin: 0;

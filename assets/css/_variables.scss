@@ -3,7 +3,10 @@ $colors: (
     'secondary': #008BFF,
     'white': #FFFFFF,
     'black': #000,
-    'background': #F5F5F5
+    'background': #F5F5F5,
+    'dark-background': darken(#F5F5F5, 20%),
+    'dark-background-text': darken(#F5F5F5, 60%)
+
 );
 
 @function color($key: 'primary') {
@@ -13,5 +16,5 @@ $colors: (
 $site-width: 800px;
 $mobile-width: 700px;
 
-$standard-margin: 25px;
-$tight-margin: 10px;
+$standard-spacing: 1rem;
+$tight-spacing: .5rem;
