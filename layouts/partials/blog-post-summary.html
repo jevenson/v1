@@ -1,11 +1,15 @@
 <div class="blog-post-summary-container">
-    <a href="{{ .RelPermalink }}">
-        <h3>{{ .Title }}</h3>
+    <a href="{{ .page.RelPermalink }}">
+        <h4>{{ .page.Title }}</h4>
     </a>
+    <p>{{ .page.Params.tagline }}</p>
 
-    <p>{{ .Summary }}</p>
+    <span>{{ dateFormat "January 1, 2006" .page.Date }} &bull; {{ .page.ReadingTime }} minute read</span>
 
-    <a href="{{ .RelPermalink }}">
-        <p>Read More</p>
-    </a>
+    {{ if .extended }}
+        <p class="summary">{{ .page.Summary }}</p>
+        <a href="{{ .page.RelPermalink }}">
+            <p>Read More</p>
+        </a>
+    {{ end }}
 </div>

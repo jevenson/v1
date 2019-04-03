@@ -1,7 +1,7 @@
 {{ define "main" }}
     <article class="blog-post-container">
         <h1>{{ .Title }}</h1>
-        <span>{{ dateFormat "Monday, January 1, 2006" .Date }}</span>
+        <span>{{ dateFormat "January 1, 2006" .Date }}</span>
 
         <div class="body">
             {{ .Content }}

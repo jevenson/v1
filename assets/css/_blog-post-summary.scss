@@ -1,6 +1,21 @@
 .blog-post-summary-container {
+    margin-bottom: $standard-spacing;
 
-    h3 {
+    h4 {
         color: color("black");
+        margin: $tight-spacing 0 0;
+    }
+
+    p {
+        margin: 0;
+
+        &.summary {
+            margin-top: $tight-spacing;
+        }
+    }
+
+    span {
+        font-size: 0.8rem;
+        color: color("primary");
     }
 }

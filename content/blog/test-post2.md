@@ -2,6 +2,7 @@
 title: "This could be the first post on my blog"
 date: 2019-03-30
 draft: false
+tagline: "Lorem ipsum dolor sit amet"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus mattis rhoncus urna neque viverra. Massa tincidunt nunc pulvinar sapien et. Morbi tincidunt augue interdum velit. Donec ultrices tincidunt arcu non. Dignissim diam quis enim lobortis. Adipiscing elit pellentesque habitant morbi tristique senectus et netus et. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi. Gravida cum sociis natoque penatibus. Pulvinar neque laoreet suspendisse interdum consectetur libero. Vel facilisis volutpat est velit egestas. A diam maecenas sed enim ut. Penatibus et magnis dis parturient montes nascetur ridiculus mus. Egestas pretium aenean pharetra magna ac placerat vestibulum. Facilisi nullam vehicula ipsum a arcu cursus vitae. Dui accumsan sit amet nulla. Vitae sapien pellentesque habitant morbi tristique senectus.

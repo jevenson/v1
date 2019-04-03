@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 </head>
 <body>
-    {{ partial "header" . }}
+    {{ partialCached "header" . }}
 
     <div class="container">
         <div class="main">
@@ -17,6 +17,6 @@
         </div>
     </div>
 
-    {{ partial "footer" . }}
+    {{ partialCached "footer" . }}
 </body>
 </html>

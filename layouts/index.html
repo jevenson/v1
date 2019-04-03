@@ -4,7 +4,7 @@
     </section>
     {{ range .Pages }}
         {{ if eq .Type "blog" }}
-            {{ partial "blog-post-summary" . }}
+            {{ partial "blog-post-summary" (dict "page" . ) }}
         {{ end }}
     {{ end }}
 {{ end }}

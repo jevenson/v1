@@ -1,5 +1,4 @@
 {{ define "main" }}
-    <h1>{{ .Title }}</h1>
-    <span>{{ dateFormat "Monday, January 1, 2006" .Date }}</span>
+    <h1 class="page-title">{{ .Title }}</h1>
     {{ .Content }}
 {{ end }}
