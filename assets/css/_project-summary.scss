@@ -1,0 +1,39 @@
+.project-summary-container {
+    display: flex;
+    margin-bottom: $standard-spacing;
+
+    h3 {
+        margin: 0;
+    }
+
+    span {
+        font-size: 1rem;
+        color: color("primary");
+    }
+
+    .image-container {
+        width: 25%;
+        flex-shrink: 0;
+        border: 5px solid color("black");
+        margin-right: $standard-spacing;
+
+        position: relative;
+
+        .image-container-again {
+            position: absolute;
+            top: 0; bottom: 0;
+            left: 0; right: 0;
+        }
+
+        img {
+            object-fit: cover;
+            object-position: 0 0;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    p, ul {
+        margin-bottom: 0;
+    }
+}

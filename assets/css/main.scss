@@ -8,6 +8,8 @@
 @import "./_footer";
 @import "./_blog-post";
 @import "./_blog-post-summary";
+@import "./_project";
+@import "./_project-summary";
 
 // ShortCodes
 @import "./shortcodes/colored-text";
@@ -46,7 +48,7 @@ body {
         margin: 0 $standard-spacing;
         flex: 1;
 
-        .main {
+        .narrow {
 
             @media (min-width: $mobile-width - 1) {
                 width: 75%;

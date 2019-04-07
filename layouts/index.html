@@ -1,10 +1,12 @@
 {{ define "main" }}
-    <section class="introduction">
-        {{ .Content }}
-    </section>
-    {{ range .Pages }}
-        {{ if eq .Type "blog" }}
-            {{ partial "blog-post-summary" (dict "page" . ) }}
+    <div class="narrow">
+        <section class="introduction">
+            {{ .Content }}
+        </section>
+        {{ range .Pages }}
+            {{ if eq .Type "blog" }}
+                {{ partial "blog-post-summary" (dict "page" . ) }}
+            {{ end }}
         {{ end }}
-    {{ end }}
+    </div>
 {{ end }}

@@ -12,9 +12,7 @@
     {{ partialCached "header" . }}
 
     <div class="container">
-        <div class="main">
-            {{ block "main" . }}{{ end }}
-        </div>
+        {{ block "main" . }}{{ end }}
     </div>
 
     {{ partialCached "footer" . }}

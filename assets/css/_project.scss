@@ -1,0 +1,21 @@
+.project-container {
+
+    h3 {
+        margin: 0;
+    }
+
+    span {
+        font-size: 1rem;
+        color: color("primary");
+    }
+
+    img {
+        width: 100%;
+        border: 5px solid color("black");
+    }
+
+    p {
+        margin: $tight-spacing 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+}
