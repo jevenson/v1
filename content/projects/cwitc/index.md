@@ -2,7 +2,11 @@
 title: "Central Wisconsin IT Conference"
 date: 2019-01-01
 draft: false
-image: "/images/cwitc.png"
+resources:
+- name: screenshot
+  src: images/cwitc.png
+  params:
+    alt: Screenshot of CWITC Website
 projectUrls:
     - "[https://cwitc.org](https://cwitc.org)"
 list:

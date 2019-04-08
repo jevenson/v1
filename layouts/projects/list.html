@@ -3,32 +3,6 @@
     {{ .Content }}
 
     {{ range .Pages }}
-        <div class="project-summary-container">
-            <div class="image-container">
-                <div class="image-container-again">
-                    <img src="{{ .Params.image }}" />
-                </div>
-            </div>
-            <div>
-                <h3>{{ .Title }}</h3>
-                <span>
-                    {{ dateFormat "2006" .Date }}
-
-                    {{ range .Params.projectUrls}}
-                        &bull; {{ . | markdownify }}
-                    {{ end }}
-                </span>
-
-                <ul>
-                    {{ range .Params.list}}
-                    <li>{{ . }}</li>
-                    {{ end }}
-                </ul>
-
-                <a href="{{ .RelPermalink }}">
-                    <p>Read More &rarr;</p>
-                </a>
-            </div>
-        </div>
+        {{ partial "project-summary" .}}
     {{ end }}
 {{ end }}
