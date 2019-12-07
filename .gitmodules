@@ -1,0 +1,4 @@
+[submodule "modules/normalize-scss"]
+	path = modules/normalize-scss
+	url = https://github.com/JohnAlbin/normalize-scss.git
+	branch = master
