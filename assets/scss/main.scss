@@ -16,6 +16,10 @@
 // ShortCodes
 @import "./shortcodes/colored-text";
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     height: 100vh;
     font-family: sans-serif;
@@ -40,6 +44,10 @@ body {
         width: calc(100% - #{ $standard-spacing * 2 });
         margin: 0 $standard-spacing;
         flex: 1;
+
+        @media (max-width: $mobile-width) {
+            margin-top: 7rem;
+        }
 
         .narrow {
 
