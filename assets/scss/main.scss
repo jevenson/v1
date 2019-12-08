@@ -1,3 +1,5 @@
+@import "../../modules/normalize-scss/sass/normalize/import-now";
+
 @import "./_variables";
 
 // Layouts
@@ -14,18 +16,9 @@
 // ShortCodes
 @import "./shortcodes/colored-text";
 
-* {
-    font-family: 'Courier New', Courier, monospace;
-    box-sizing: border-box;
-}
-
 html {
-    font-size: 20px;
     height: 100vh;
-
-    @media (max-width: $mobile-width) {
-        font-size: 16px;
-    }
+    font-family: sans-serif;
 }
 
 body {
@@ -34,7 +27,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: color('background');
-    border-top: $top-border solid lighten(color('primary'), 20%);
+    border-top: $top-border solid color('primary');
     min-height: 100vh;
 
     display: flex;
@@ -58,19 +51,7 @@ body {
 }
 
 h1 {
-    font-size: 1.75rem;
-}
-
-h2 {
-    font-size: 1.6rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-}
-
-h4 {
-    font-size: 1.3rem;
+    font-family: monospace;
 }
 
 p {
@@ -80,17 +61,4 @@ p {
 
 .page-title {
     border-bottom: 3px solid color("primary");
-}
-
-a {
-    text-decoration: none;
-    color: color('primary');
-
-    &:visited {
-        color: color('primary');
-    }
-
-    &:hover {
-        text-decoration: underline;
-    }
 }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ .Page.Title }} - {{ .Site.Title }}</title>
-    {{ $style := resources.Get "/css/main.scss" | toCSS | minify | fingerprint }}
+    {{ $style := resources.Get "/scss/main.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 </head>
 <body>
@@ -16,5 +16,8 @@
     </div>
 
     {{ partialCached "footer" . }}
+
+    {{ $script := resources.Get "/js/header.js" | minify }}
+    <script src="{{ $script.RelPermalink }}"></script>
 </body>
 </html>

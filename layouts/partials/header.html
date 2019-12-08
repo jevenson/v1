@@ -1,15 +1,22 @@
 <header>
-    <div class="container">
-        <nav>
-            <a href="/" class="site-title">{{ lower .Site.Title }}</a>
-            <ul class="nav-items">
-                {{ range .Site.Menus.main }}
-                <li><a href="{{ .URL }}">{{ lower .Title }}</a></li>
-                {{ end }}
-            </ul>
-        </nav>
-        <div class="portrait-container">
-            <img class="portrait" src="/images/josh.jpg" />
+  <div class="header-inner">
+    <div class="hero-container">
+      <h1>
+        <a href="/">
+          <span class="first">josh</span><br/>
+          <span class="last">evenson</span>
+        </a>
+      </h1>
+      <div class="menu-button">
+        <div class="menu-icon" onclick="toggle(this)">
+          <div></div>
         </div>
+      </div>
     </div>
+    <nav>
+    {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}">{{ lower .Title }}</a>
+    {{ end }}
+    </nav>
+  </div>
 </header>
