@@ -26,35 +26,22 @@ html {
 }
 
 body {
-    $top-border: 10px;
-
     margin: 0;
     padding: 0;
     background-color: color('background');
-    border-top: $top-border solid color('primary');
     min-height: 100vh;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    .main-container {
+        margin-left: 25vw;
 
-    .container {
-        max-width: $site-width;
-        width: calc(100% - #{ $standard-spacing * 2 });
-        margin: 0 $standard-spacing;
-        flex: 1;
-
-        @media (max-width: $mobile-width) {
-            margin-top: 7rem;
+        @media only screen and (max-width: $mobile-width) {
+            margin: 5rem 0 0;
         }
+    }
 
-        .narrow {
-
-            @media (min-width: $mobile-width - 1) {
-                width: 75%;
-            }
-        }
+    .content-container {
+        padding: 5rem 10vw;
+        min-height: 100vh
     }
 }
 
@@ -63,8 +50,8 @@ h1 {
 }
 
 p {
-    font-size: 1rem;
-    line-height: 1.75rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
 }
 
 .page-title {

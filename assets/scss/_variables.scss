@@ -1,5 +1,6 @@
 $colors: (
-    'primary': orange, // #FF7400,
+    'primary': #2d3748, // #FF7400,
+    'dark-primary': darken(#2d3748, 10%),
     'secondary': #008BFF,
     'white': #FFFFFF,
     'black': #222,
@@ -13,8 +14,7 @@ $colors: (
     @return map-get($colors, $key);
 }
 
-$site-width: 800px;
 $mobile-width: 700px;
 
-$standard-spacing: 1rem;
-$tight-spacing: .5rem;
+$standard-spacing: 2rem;
+$tight-spacing: 1rem;
