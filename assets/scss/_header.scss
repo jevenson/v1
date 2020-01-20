@@ -160,7 +160,7 @@ nav {
     display: flex;
     flex-direction: column;
 
-    transition: 500ms;
+    transition: max-height 500ms, margin 500ms;
 
     a {
         line-height: 1;
@@ -184,7 +184,7 @@ nav {
         &.open {
             margin-bottom: 2rem;
             max-height: 500px;
-            transition: max-height 500ms;
+            transition: max-height 500ms, margin 500ms;
         }
 
         flex-direction: column;
