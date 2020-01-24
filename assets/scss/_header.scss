@@ -6,14 +6,6 @@
     }
 }
 
-@mixin nav-item-size-mixin() {
-    font-size: 2vw;
-
-    @media only screen and (max-width: $mobile-width) {
-        font-size: 1rem;
-    }
-}
-
 $nav-margin: 2vw;
 $transition-time: 200ms;
 
@@ -154,49 +146,7 @@ header {
     }
 }
 
-nav {
-    @include nav-item-size-mixin;
 
-    display: flex;
-    flex-direction: column;
-
-    transition: max-height 500ms, margin 500ms;
-
-    a {
-        line-height: 1;
-        padding: 0.5rem 1.5rem;
-        color: color("white");
-        text-decoration: none;
-
-        transition: color $transition-time;
-
-        &:hover {
-            color: color("dark-background");
-            transition: color $transition-time;
-        }
-    }
-
-    @media only screen and (max-width: $mobile-width) {
-        max-height: 0;
-        overflow: hidden;
-        width: 100%;
-
-        &.open {
-            margin-bottom: 2rem;
-            max-height: 500px;
-            transition: max-height 500ms, margin 500ms;
-        }
-
-        flex-direction: column;
-        text-align: center;
-        margin: 0;
-
-        a {
-            margin-left: 0rem !important;
-            margin-bottom: 1rem;
-        }
-    }
-}
 
 .menu-icon {
     width: 1.5rem;

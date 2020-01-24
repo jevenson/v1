@@ -15,9 +15,5 @@
       </div>
     </div>
   </div>
-  <nav>
-  {{ range .Site.Menus.main }}
-      <a href="{{ .URL }}">{{ lower .Title }}</a>
-  {{ end }}
-  </nav>
+  {{ partial "nav" . }}
 </header>
