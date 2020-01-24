@@ -1,5 +1,5 @@
 $colors: (
-    'primary': #2d3748, // #FF7400,
+    'primary': #2d3748,
     'dark-primary': darken(#2d3748, 10%),
     'secondary': #008BFF,
     'white': #FFFFFF,
@@ -7,7 +7,6 @@ $colors: (
     'background': #F5F5F5,
     'dark-background': darken(#F5F5F5, 20%),
     'dark-background-text': darken(#F5F5F5, 60%)
-
 );
 
 @function color($key: 'primary') {
@@ -18,3 +17,5 @@ $mobile-width: 700px;
 
 $standard-spacing: 2rem;
 $tight-spacing: 1rem;
+
+$header-font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;

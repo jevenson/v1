@@ -1,0 +1,56 @@
+@mixin nav-item-font-size-mixin() {
+    font-size: 2vw;
+
+    @media (max-width: $mobile-width) {
+        font-size: 2rem;
+    }
+}
+
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+
+    transition: max-height 500ms, margin 500ms;
+
+    @media (max-width: $mobile-width) {
+        flex-direction: column;
+        text-align: center;
+
+        max-height: 0;
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+
+        &.open {
+            margin-bottom: $standard-spacing;
+            max-height: 500px;
+            transition: max-height 500ms, margin 500ms;
+        }
+    }
+
+    ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        padding: ($tight-spacing / 2) 0;
+        position: relative;
+    }
+
+    a {
+        @include nav-item-font-size-mixin();
+
+        line-height: 1;
+        text-decoration: none;
+        color: color("white");
+
+        transition: color $transition-time;
+
+        &:hover {
+            color: color("dark-background");
+            transition: color $transition-time;
+        }
+    }
+}

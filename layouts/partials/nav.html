@@ -1,0 +1,7 @@
+<nav class="main-navigation">
+  <ol>
+    {{ range .Site.Menus.main }}
+    <li><a href="{{ .URL }}">{{ lower .Title }}</a></li>
+    {{ end }}
+  </ol>
+</nav>
