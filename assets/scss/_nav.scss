@@ -9,6 +9,12 @@
 .main-navigation {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    flex-grow: 1;
+    margin: 0 auto;
+
+    width: 80%;
 
     transition: max-height 500ms, margin 500ms;
 
@@ -51,6 +57,27 @@
         &:hover {
             color: color("dark-background");
             transition: color $transition-time;
+        }
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin: auto 0 2rem;
+    width: 80%;
+
+    @media (max-width: $mobile-width) {
+        margin: 2rem 0 0;
+    }
+
+    svg {
+        height: 2rem;
+        width: 2rem;
+        fill: color('white');
+
+        &:hover{
+            fill: color('dark-background');
         }
     }
 }
