@@ -1,3 +1,14 @@
-githubUrl = "https://github.com/jevenson/"
-twitterUrl = "https://twitter.com/joshin_my_tots"
-linkedinUrl = "https://www.linkedin.com/in/jevenson1/"
+[[socialIcons]]
+name = "GitHub"
+url = "https://github.com/jevenson/"
+icon = "github"
+
+[[socialIcons]]
+name = "Twitter"
+url = "https://twitter.com/joshin_my_tots"
+icon = "twitter"
+
+[[socialIcons]]
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/jevenson1/"
+icon = "linkedin"
