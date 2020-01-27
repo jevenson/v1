@@ -1,3 +1,6 @@
 baseURL = "https://joshevenson.com/"
 languageCode = "en-us"
 title = "Josh Evenson"
+
+[markup.goldmark.renderer]
+unsafe= true
