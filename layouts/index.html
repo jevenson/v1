@@ -4,10 +4,39 @@
             {{ .Content }}
         </section>
 
+        <div class="images">
+            <img class="bhtp active" src="/images/bhtplogo_square.png" />
+            <img class="cenwidev" src="/images/cenwidevlogo_square.png" />
+            <img class="cwitc" src="/images/cwitclogo_square.svg" />
+            <h3 class="bhtp active">I work at <br/> <span class="name">Berkshire Hathaway Travel Protection</span></h3>
+            <h3 class="cenwidev">I co-organize the <br/> <span class="name">Central Wisconsin Developers Group</span></h3>
+            <h3 class="cwitc">I help plan the <br/> <span class="name">Central Wisconsin IT Conference</span></h3>
+        </div>
+
         <!-- {{ range .Pages }}
             {{ if eq .Type "blog" }}
                 {{ partial "blog-post-summary" (dict "page" . ) }}
             {{ end }}
         {{ end }} -->
     </div>
+
+    <script>
+        var images = document.querySelectorAll('.images img');
+        var texts = document.querySelectorAll('.images h3');
+
+        var currentIndex = 0;
+
+        setInterval(() => {
+            images[currentIndex].classList.toggle('active');
+            texts[currentIndex].classList.toggle('active');
+
+            currentIndex = ++currentIndex;
+            if (currentIndex >= images.length) {
+                currentIndex = 0;
+            }
+
+            images[currentIndex].classList.toggle('active');
+            texts[currentIndex].classList.toggle('active');
+        }, 3000);
+    </script>
 {{ end }}
