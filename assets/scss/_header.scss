@@ -4,6 +4,10 @@
     @media (max-width: $mobile-width) {
         font-size: 2rem;
     }
+
+    @media (min-width: 1600px) {
+        font-size: 50px;
+    }
 }
 
 $transition-time: 200ms;
@@ -12,7 +16,7 @@ header {
     position: fixed;
     top: 0;
     height: 100vh;
-    width: 25vw;
+    width: 20vw;
 
     display: flex;
     flex-direction: column;
@@ -44,7 +48,7 @@ header {
     justify-content: center;
     position: relative;
 
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 
     @media (max-width: $mobile-width) {
         margin: 0;

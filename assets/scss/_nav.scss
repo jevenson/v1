@@ -4,6 +4,10 @@
     @media (max-width: $mobile-width) {
         font-size: 2rem;
     }
+
+    @media (min-width: 1600px) {
+        font-size: 40px;
+    }
 }
 
 .main-navigation {
@@ -41,7 +45,7 @@
     }
 
     li {
-        padding: ($tight-spacing / 2) 0;
+        padding: $tight-spacing 0;
         position: relative;
     }
 

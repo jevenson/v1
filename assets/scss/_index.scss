@@ -2,7 +2,11 @@
     font-size: 4vw;
 
     @media (max-width: $mobile-width) {
-        font-size: 6vw;
+        font-size: 6vw
+    }
+
+    @media (min-width: 1600px) {
+        font-size: 65px;
     }
 }
 
@@ -103,6 +107,7 @@ a {
         transition: filter 1s;
 
         // background-color: rgba(blue, 0.25);
+
 
         &:not(:last-child) {
             margin-right: 2rem;
