@@ -42,6 +42,11 @@ body {
 
     .content-container {
         padding: 5rem 10vw;
+
+        @media only screen and (max-width: $mobile-width) {
+            padding: 5rem 5vw;
+        }
+
         min-height: 100vh
     }
 }
