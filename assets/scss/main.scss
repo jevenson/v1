@@ -32,22 +32,33 @@ body {
     background-color: color('background');
     min-height: 100vh;
 
+    // .main-container {
+    //     margin-left: 20vw;
+
+    //     @media only screen and (max-width: $mobile-width) {
+    //         margin: 5rem 0 0;
+    //     }
+    // }
+
+    // .content-container {
+    //     padding: 4rem 10vw;
+
+    //     @media only screen and (max-width: $mobile-width) {
+    //         padding: 5rem 5vw;
+    //     }
+
+    //     min-height: 100vh
+    // }
+
     .main-container {
         margin-left: 20vw;
+        padding: 4rem 10vw;
+        min-height: 100vh;
 
         @media only screen and (max-width: $mobile-width) {
             margin: 5rem 0 0;
-        }
-    }
-
-    .content-container {
-        padding: 5rem 10vw;
-
-        @media only screen and (max-width: $mobile-width) {
             padding: 5rem 5vw;
         }
-
-        min-height: 100vh
     }
 }
 
