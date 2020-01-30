@@ -1,7 +1,10 @@
 {{ define "main" }}
+    {{ $style := resources.Get "/scss/blog-post.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
     <article class="blog-post-container">
         <h1>{{ .Title }}</h1>
-        <span>{{ dateFormat "January 1, 2006" .Date }}</span>
+        <span class="date">{{ dateFormat "January 1, 2006" .Date }} &bull; {{ .ReadingTime }} minute read</span>
 
         <div class="body">
             {{ .Content }}

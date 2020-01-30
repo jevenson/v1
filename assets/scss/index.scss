@@ -1,0 +1,136 @@
+@import "./_variables";
+
+@mixin header-size-mixin() {
+    font-size: 4vw;
+
+    @media (max-width: $mobile-width) {
+        font-size: 7vw
+    }
+
+    @media (min-width: 1600px) {
+        font-size: 65px;
+    }
+}
+
+@mixin subtitle-mixin() {
+    font-size: 1.5vw;
+
+    @media (max-width: $mobile-width) {
+        font-size: 3vw;
+    }
+
+    @media (min-width: 1600px) {
+        font-size: 24px;
+    }
+}
+
+@mixin link-size-mixin() {
+    font-size: 2vw;
+
+    @media (max-width: $mobile-width) {
+        font-size: 4vw;
+    }
+
+    @media (min-width: 1600px) {
+        font-size: 30px;
+    }
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    @media (max-width: $mobile-width) {
+        align-items: flex-start;
+    }
+}
+
+.introduction {
+
+    h1 {
+        color: color('primary');
+        margin: 0;
+        font-weight: initial;
+        text-transform: lowercase;
+        @include header-size-mixin;
+
+        strong {
+            color: color('accent');
+        }
+    }
+}
+
+.experience {
+    list-style-type: none;
+    margin: $standard-spacing 0 0;
+    padding: 0;
+    width: 100%;
+
+    li {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    img {
+        width: 5vw;
+        height: auto;
+        margin-right: $tight-spacing;
+
+        @media (max-width: $mobile-width) {
+            width: 15vw;
+            margin-right: 1rem;
+        }
+    }
+
+    h3 {
+        text-transform: lowercase;
+        color: color('dark-primary');
+        font-family: $header-font-family;
+        @include subtitle-mixin;
+
+        span { display: block; }
+    }
+
+    a {
+        text-transform: lowercase;
+        @include link-size-mixin;
+        letter-spacing: -2px;
+        position: relative;
+        text-decoration: none;
+    }
+
+    li a {
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -1%;
+            right: -1%;
+            bottom: 0;
+
+            transition: top 200ms;
+
+        }
+
+        &:hover::before {
+            top: 0;
+            transition: top 200ms;
+        }
+
+        &.bhtp { color: color('bhtp'); }
+        &.bhtp::before { background-color: rgba(color('bhtp'), .20); }
+
+        &.cenwidev { color: color('cenwidev'); }
+        &.cenwidev::before { background-color: rgba(color('cenwidev'), .20); }
+
+        &.cwitc { color: color('cwitc'); }
+        &.cwitc::before { background-color: rgba(color('cwitc'), .20); }
+    }
+}

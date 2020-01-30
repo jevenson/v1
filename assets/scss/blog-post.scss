@@ -1,0 +1,22 @@
+@import "./_variables";
+
+.blog-post-container {
+
+    h1 {
+        text-transform: lowercase;
+        color: color('accent');
+        margin: 0 0 $tight-spacing;
+    }
+
+    .date {
+        text-transform: lowercase;
+    }
+
+    p {
+        margin: $tight-spacing 0;
+    }
+
+    .body {
+        max-width: $article-max-width;
+    }
+}

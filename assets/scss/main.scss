@@ -5,9 +5,6 @@
 // Partials
 @import "./_header";
 @import "./_nav";
-@import "./_footer";
-@import "./_blog-post";
-@import "./_blog-post-summary";
 @import "./_project";
 @import "./_project-summary";
 
@@ -33,6 +30,8 @@ body {
         padding: 4rem 10vw;
         min-height: 100vh;
 
+        background: $background-pattern;
+
         @media only screen and (max-width: $mobile-width) {
             margin: 5rem 0 0;
             padding: 5rem 5vw;
@@ -42,6 +41,11 @@ body {
 
 h1 {
     font-family: $header-font-family;
+
+    &.page-title {
+        text-transform: lowercase;
+        color: color('primary');
+    }
 }
 
 p {
@@ -50,3 +54,12 @@ p {
 }
 
 svg.symbol { display: none; }
+
+@font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/Inter-Regular.woff2") format("woff2"),
+         url("/fonts/Inter-Regular.woff") format("woff");
+}

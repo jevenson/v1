@@ -1,0 +1,12 @@
+{{ define "main" }}
+    {{ $style := resources.Get "/scss/blog-post-summary.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+    <h1 class="page-title">{{ .Title }}</h1>
+
+    {{ .Content }}
+
+    {{ range .Pages }}
+        {{ partial "blog-post-summary" (dict "page" . "extended" true ) }}
+    {{ end }}
+{{ end }}

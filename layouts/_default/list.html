@@ -1,10 +1,9 @@
 {{ define "main" }}
-    <div class="narrow">
-        <h1 class="page-title">{{ .Title }}</h1>
-        {{ .Content }}
+    <h1 class="page-title">{{ .Title }}</h1>
 
-        {{ range .Pages }}
-            {{ partial "blog-post-summary" (dict "page" . "extended" true ) }}
-        {{ end }}
-    </div>
+    {{ .Content }}
+
+    {{ range .Pages }}
+        <h2>{{ .Title }}</h2>
+    {{ end }}
 {{ end }}
