@@ -1,29 +1,32 @@
 {{ define "main" }}
 
+    {{ $style := resources.Get "/scss/index.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
     <section class="introduction">
         {{ .Content }}
     </section>
 
-    <ul class="images">
-        <li class="bhtp">
+    <ul class="experience">
+        <li>
             <img src="/images/bhtplogo_square.png" />
-            <h3 class="bhtp active">
-                Employed at <br/>
-                <a class="name" href="https://www.bhtp.com" target="_blank">Berkshire Hathaway Travel Protection</a>
+            <h3>
+                <span>Employed at</span>
+                <a class="bhtp" href="https://www.bhtp.com" target="_blank">Berkshire Hathaway Travel Protection</a>
             </h3>
         </li>
-        <li class="cenwidev">
+        <li>
             <img src="/images/cenwidevlogo_square.png" />
-            <h3 class="cenwidev">
-                Co-organizer of the <br/>
-                <a class="name" href="https://www.cenwidev.org" target="_blank">Central Wisconsin Developers Group</a>
+            <h3>
+                <span>Co-organizer of the</span>
+                <a class="cenwidev" href="https://www.cenwidev.org" target="_blank">Central Wisconsin Developers Group</a>
             </h3>
         </li>
-        <li class="cwitc">
+        <li>
             <img src="/images/cwitclogo_square.svg" />
-            <h3 class="cwitc">
-                Committee Member for the <br/>
-                <a class="name" href="https://www.cwitc.org" target="_blank">Central Wisconsin IT Conference</a>
+            <h3>
+                <span>Committee Member for the</span>
+                <a class="cwitc" href="https://www.cwitc.org" target="_blank">Central Wisconsin IT Conference</a>
             </h3>
         </li>
     </ul>
