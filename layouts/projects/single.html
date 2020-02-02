@@ -1,4 +1,7 @@
 {{ define "main" }}
+    {{ $style := resources.Get "/scss/project.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
     <div class="project-container">
         {{ with .Resources.GetMatch "screenshot" }}
             <img src="{{ .RelPermalink }}" alt="{{ .Params.alt }}" />

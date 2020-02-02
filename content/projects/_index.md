@@ -5,4 +5,4 @@ draft: false
 menu: ["main", "footer"]
 ---
 
-Stuff I've worked on
+stuff I've worked on

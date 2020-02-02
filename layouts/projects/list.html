@@ -1,5 +1,9 @@
 {{ define "main" }}
+    {{ $style := resources.Get "/scss/project-summary.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
     <h1 class="page-title">{{ .Title }}</h1>
+
     {{ .Content }}
 
     {{ range .Pages }}

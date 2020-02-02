@@ -5,8 +5,6 @@
 // Partials
 @import "./_header";
 @import "./_nav";
-@import "./_project";
-@import "./_project-summary";
 
 // ShortCodes
 @import "./shortcodes/colored-text";
@@ -16,7 +14,7 @@
 }
 
 html {
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -62,4 +60,8 @@ svg.symbol { display: none; }
     font-display: swap;
     src: url("/fonts/Inter-Regular.woff2") format("woff2"),
          url("/fonts/Inter-Regular.woff") format("woff");
+}
+
+h1, h2, h3 {
+    font-family: $header-font-family;
 }

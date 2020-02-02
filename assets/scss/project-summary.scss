@@ -1,3 +1,5 @@
+@import "./_variables";
+
 .project-summary-container {
     display: flex;
     margin-bottom: $standard-spacing;
@@ -10,14 +12,17 @@
         color: color("black");
         text-decoration: none;
 
-        h3 {
+        h2 {
             margin: 0;
+            color: color('primary');
+            text-transform: lowercase;
         }
     }
 
-    span {
+    .project-link {
         font-size: 1rem;
         color: color("primary");
+        text-transform: lowercase;
     }
 
     .image-container {
@@ -36,13 +41,27 @@
 
         img {
             object-fit: cover;
-            object-position: 0 0;
+            object-position: 50% 0;
             height: 100%;
             width: 100%;
         }
     }
 
-    p, ul {
-        margin-bottom: 0;
+    a {
+        text-decoration: none;
+        color: color("accent");
+
+        transition: background-color 200ms;
+
+        &:hover {
+            transition: background-color 200ms;
+            background-color: rgba(color("accent"), 0.20);
+        }
+
+        &.read-more {
+            margin: 0;
+            font-family: $header-font-family;
+            text-transform: lowercase;
+        }
     }
 }
