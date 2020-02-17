@@ -1,5 +1,5 @@
 ---
-title: "Berkshire Hathaway Travel Protection - Purchase Path"
+title: "Berkshire Hathaway Travel Protection Purchase Path"
 date: 2016-01-01
 draft: false
 resources:
@@ -13,6 +13,7 @@ list:
     - Rewrite of existing site using Angular 2
     - First exposure to TypeScript
     - Complex application architecture
+summary: A complex web application rewritten with Angular 2 and Typescript. 
 ---
 
 Info about TIS app here

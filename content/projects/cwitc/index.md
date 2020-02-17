@@ -4,7 +4,7 @@ date: 2019-01-01
 draft: false
 resources:
 - name: screenshot
-  src: images/cwitc.png
+  src: images/cwitc.jpg
   params:
     alt: Screenshot of CWITC Website
 projectUrls:
@@ -14,6 +14,7 @@ list:
     - Hosted on Netlify
     - Data store in Firebase
     - Content Management with Contentful
+summary: Built with Gatsbyjs, hosted on Netlify, and managed by Contentful. Open Source!
 ---
 
 Previously, the CWITC site was built with Wix. We wanted to move to a platform that allowed us to share session information

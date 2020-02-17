@@ -3,10 +3,8 @@
 .project-summary-container {
     display: flex;
     margin-bottom: $standard-spacing;
-
-    @media (max-width: $mobile-width) {
-        flex-direction: column;
-    }
+    flex-direction: column;
+    align-items: flex-start;
 
     .project-title {
         color: color("black");
@@ -26,24 +24,26 @@
     }
 
     .image-container {
-        width: 25%;
-        flex-shrink: 0;
-        border: 5px solid color("black");
-        margin-right: $standard-spacing;
+        border: 5px solid color("dark-primary");
+        width: 60%;
 
-        position: relative;
-
-        .image-container-again {
-            position: absolute;
-            top: 0; bottom: 0;
-            left: 0; right: 0;
-        }
-
-        img {
-            object-fit: cover;
-            object-position: 50% 0;
-            height: 100%;
+        @media (max-width: $mobile-width) {
             width: 100%;
+        }
+        img {
+            width: 100%;
+
+            height: auto;
+            vertical-align: middle;
+        }
+    }
+
+    .description-container {
+        margin: 1rem 0 2rem;
+
+        p {
+            width: 75%;
+            margin-bottom: 0;
         }
     }
 

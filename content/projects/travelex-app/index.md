@@ -14,6 +14,7 @@ list:
     - Built with NativeScript & TypeScript
     - Cross Platform for iOS and Android
     - Challenging Deadline
+summary: Built as a cross platform app with NativeScript & TypeScript with a challenging deadline.
 ---
 
 Info about TIS app here

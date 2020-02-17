@@ -5,4 +5,4 @@ draft: false
 menu: ["main", "footer"]
 ---
 
-Get a hold of me
+get a hold of me

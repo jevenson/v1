@@ -1,34 +1,27 @@
 <div class="project-summary-container">
-        <div class="image-container">
-            <div class="image-container-again">
-                <a href="{{ .RelPermalink }}">
-                    {{ with .Resources.GetMatch "screenshot" }}
-                        {{ $image := .Resize "x350"}}
-                        <img src="{{ $image.RelPermalink }}" alt="{{ .Params.alt }}" />
-                    {{ end }}
-                </a>
-            </div>
-        </div>
-        <div>
-            <a class="project-title" href="{{ .RelPermalink }}">
-                <h2>{{ .Title }}</h2>
-            </a>
-            <span>
-                {{ dateFormat "2006" .Date }}
-
-                {{ range .Params.projectUrls}}
-                    <span class="project-link">&bull; {{ . | markdownify }}</span>
-                {{ end }}
-            </span>
-
-            <ul>
-                {{ range .Params.list}}
-                <li>{{ . }}</li>
-                {{ end }}
-            </ul>
-
-            <a class="read-more" href="{{ .RelPermalink }}">
-                Read More...
-            </a>
-        </div>
+    <div class="image-container">
+        <a href="{{ .RelPermalink }}">
+            {{ with .Resources.GetMatch "screenshot" }}
+                <img src="{{ .RelPermalink }}" alt="{{ .Params.alt }}" />
+            {{ end }}
+        </a>
     </div>
+    <div class="description-container">
+        <a class="project-title" href="{{ .RelPermalink }}">
+            <h2>{{ .Title }}</h2>
+        </a>
+        <span>
+            {{ dateFormat "2006" .Date }}
+
+            {{ range .Params.projectUrls}}
+                <span class="project-link">&bull; {{ . | markdownify }}</span>
+            {{ end }}
+        </span>
+
+        <p>{{ .Params.summary }}</p>
+
+        <a class="read-more" href="{{ .RelPermalink }}">
+            Read More...
+        </a>
+    </div>
+</div>
