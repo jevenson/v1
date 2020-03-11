@@ -15,7 +15,8 @@
 
         <div class="hero">
             {{ with .Resources.GetMatch "screenshot" }}
-                <img src="{{ .RelPermalink }}" alt="{{ .Params.alt }}" />
+                {{ $image := .Resize "600x" }}
+                <img src="{{ $image.RelPermalink }}" alt="{{ .Params.alt }}" />
             {{ end }}
             <ul>
                 {{ range .Params.list}}
