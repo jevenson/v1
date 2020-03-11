@@ -2,18 +2,55 @@
 
 .project-container {
 
-    h3 {
+    h1 {
         margin: 0;
     }
 
-    span {
+    h2 {
         font-size: 1rem;
         color: color("primary");
+
+        a {
+            color: color("accent");
+        }
     }
 
-    img {
-        width: 100%;
-        border: 5px solid color("black");
+    .hero {
+        display: flex;
+        align-items: stretch;
+        margin: 2rem 0;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: 0;
+
+            li {
+                color: color('accent');
+                font-family: $header-font-family;
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        img {
+            width: 60%;
+            border: 5px solid color("black");
+        }
+
+        @media (max-width: 600px) {
+            flex-direction: column;
+            margin: 1rem 0;
+
+            ul {
+                margin-top: 1rem;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
     }
 
     p {
