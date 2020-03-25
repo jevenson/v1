@@ -1,1 +1,1 @@
-.blog-post-container h1{text-transform:lowercase;color:#fe7342;margin:0 0 1rem}.blog-post-container .date{text-transform:lowercase}.blog-post-container p{margin:1rem 0}.blog-post-container .body{max-width:600px}
+.blog-post-container h1{text-transform:lowercase;color:#fe7342;margin:0 0 1rem}.blog-post-container .date{text-transform:lowercase}.blog-post-container p{margin:1rem 0}.blog-post-container .body{max-width:600px}.blog-post-container li{font-size:1.25rem;margin-bottom:1rem;line-height:2rem}
