@@ -2,7 +2,7 @@
     <div class="image-container">
         <a href="{{ .RelPermalink }}">
             {{ with .Resources.GetMatch "screenshot" }}
-                {{ $image := .Resize "600x" }}
+                {{ $image := .Resize "1000x" }}
                 <img src="{{ $image.RelPermalink }}" alt="{{ .Params.alt }}" />
             {{ end }}
         </a>
