@@ -4,7 +4,7 @@ date: 2019-01-01
 draft: false
 resources:
 - name: screenshot
-  src: images/cwitc.jpg
+  src: images/cwitc.png
   params:
     alt: Screenshot of CWITC Website
 projectUrls:
