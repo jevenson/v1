@@ -4,3 +4,6 @@ title = "josh evenson"
 
 [markup.goldmark.renderer]
 unsafe= true
+
+[permalinks]
+  blog = "/:year/:month/:slug/"

@@ -2,7 +2,7 @@
 title: "welcome to my blog"
 date: 2020-03-24
 draft: false
-tagline: "hi i'm josh"
+tagline: "i made this thing"
 ---
 
 I decided to start occasionally blogging! Ever since I've discovered the JAMstack, I've been meaning to

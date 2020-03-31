@@ -3,8 +3,17 @@
 .blog-post-container {
 
     h1 {
+        font-size: 3rem;
         text-transform: lowercase;
         color: color('accent');
+        margin: 0;
+
+        @media (max-width: $mobile-width) {
+            font-size: 2rem;
+        }
+    }
+
+    h3 {
         margin: 0 0 $tight-spacing;
     }
 

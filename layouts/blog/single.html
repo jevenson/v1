@@ -4,6 +4,7 @@
 
     <article class="blog-post-container">
         <h1>{{ .Title }}</h1>
+        <h3>{{ .Params.tagline }}</h3>
         <span class="date">{{ dateFormat "January 1, 2006" .Date }} &bull; {{ .ReadingTime }} minute read</span>
 
         <div class="body">
