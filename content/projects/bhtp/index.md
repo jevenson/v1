@@ -4,7 +4,7 @@ date: 2016-01-01
 draft: false
 resources:
 - name: screenshot
-  src: images/bhtp.png
+  src: images/bhtp.jpg
   params:
     alt: Screenshot of BHTP Website
 projectUrls:

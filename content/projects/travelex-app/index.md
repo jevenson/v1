@@ -4,7 +4,7 @@ date: 2017-01-01
 draft: false
 resources:
 - name: screenshot
-  src: images/tis.png
+  src: images/tis.jpg
   params:
     alt: Screenshot of TIS App
 projectUrls:
