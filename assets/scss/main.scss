@@ -65,3 +65,12 @@ svg.symbol { display: none; }
 h1, h2, h3 {
     font-family: $header-font-family;
 }
+
+.a11y-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}

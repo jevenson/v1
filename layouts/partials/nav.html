@@ -8,7 +8,8 @@
 
   <div class="social-icons">
     {{ range.Site.Data.global.socialIcons }}
-      <a href="{{ .url }}" target="_blank" title="Josh's {{ .name }} Profile">
+      <a href="{{ .url }}" target="_blank" rel="noopener" title="Visit Josh's {{ .name }} Profile">
+        <span class="a11y-hidden">Visit Josh's {{ .name }} Profile</span>
         <svg><use xlink:href="#{{ .icon }}" /></svg>
       </a>
 
