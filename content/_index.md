@@ -1,6 +1,6 @@
 ---
 title: "josh evenson"
-description: "I'm a software developer working on front-end web and cross-platform mobile development"
+description: "i'm a software developer working on front-end web and cross-platform mobile development"
 date: 2018-08-08T00:50:27-05:00
 draft: false
 ---
