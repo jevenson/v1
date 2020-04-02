@@ -13,7 +13,8 @@ list:
     - Rewrite of existing site using Angular 2
     - First exposure to TypeScript
     - Complex application architecture
-summary: A complex web application rewritten with Angular 2 and Typescript. 
+summary: A complex web application rewritten with Angular 2 and Typescript.
+description: A complex web application rewritten with Angular 2 and Typescript.
 ---
 
 This was the first major project I worked on after I was hired at Berkshire Hathaway Travel Protection.

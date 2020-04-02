@@ -15,6 +15,7 @@ list:
     - Cross Platform for iOS and Android
     - Challenging Deadline
 summary: Built as a cross platform app with NativeScript & TypeScript with a challenging deadline.
+description: Built as a cross platform app with NativeScript & TypeScript with a challenging deadline.
 ---
 
 I was tasked with building a mobile application for Travelex during my time at Berkshire Hathaway Travel Protection. This

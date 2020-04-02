@@ -15,6 +15,7 @@ list:
     - Data store in Firebase
     - Content Management with Contentful
 summary: Built with Gatsbyjs, hosted on Netlify, and managed by Contentful. Open Source!
+description: Built with Gatsbyjs, hosted on Netlify, and managed by Contentful. Open Source!
 ---
 
 Previously, the CWITC site was built with Wix. We wanted to move to a platform that allowed us to share session information
