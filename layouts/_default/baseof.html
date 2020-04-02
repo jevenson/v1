@@ -5,6 +5,16 @@
     <meta name="description" content="software developer working on front-end web and cross-platform mobile development" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:title" content="{{ .Page.Title }}">
+    <meta property="og:description" content="{{ .Page.Params.description }}">
+    <meta property="og:image" content="/images/josh.jpg">
+    <meta property="og:url" content="{{ .Page.Permalink }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@joshin_my_tots">
+    <meta name="twitter:image:alt" content="Portrait of Josh Evenson">
+
     <title>{{ lower .Page.Title }} - {{ .Site.Title }}</title>
     {{ $style := resources.Get "/scss/main.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
