@@ -15,7 +15,12 @@
     <meta name="twitter:site" content="@joshin_my_tots">
     <meta name="twitter:image:alt" content="Portrait of Josh Evenson">
 
-    <title>{{ lower .Page.Title }} - {{ .Site.Title }}</title>
+    {{ if eq .Page.RelPermalink "/"}}
+        <title>{{ .Site.Title }}</title>
+    {{ else }}
+        <title>{{ lower .Page.Title }} - {{ .Site.Title }}</title>
+    {{ end }}
+
     {{ $style := resources.Get "/scss/main.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 </head>
