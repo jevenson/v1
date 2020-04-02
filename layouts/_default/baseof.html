@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="software developer working on front-end web and cross-platform mobile development" />
+    <meta name="description" content="{{ .Page.Params.description }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <meta property="og:site_name" content="{{ .Site.Title }}">
     <meta property="og:title" content="{{ .Page.Title }}">
@@ -14,6 +13,8 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@joshin_my_tots">
     <meta name="twitter:image:alt" content="Portrait of Josh Evenson">
+
+    <link rel="canonical" href="{{ .Page.Permalink" }} />
 
     {{ if eq .Page.RelPermalink "/"}}
         <title>{{ .Site.Title }}</title>
