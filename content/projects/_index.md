@@ -8,3 +8,5 @@ menu:
 ---
 
 a few things i've worked on that i'm proud of
+
+check out my [resume](/documents/josh-evenson-resume.pdf) for more information
