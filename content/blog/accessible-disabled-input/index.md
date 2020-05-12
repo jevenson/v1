@@ -47,7 +47,8 @@ and the content cannot be changed.
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 To summarize:
+
 1. Use `aria-disabled` instead of `disabled`
-2. Disable input by intercepting the `keydown` event
-3. Hide the blinking cursor using `text-shadow`
-4. Style the input as if it were disabled
+1. Disable input by intercepting the `keydown` event
+1. Hide the blinking cursor using `text-shadow`
+1. Style the input as if it were disabled
