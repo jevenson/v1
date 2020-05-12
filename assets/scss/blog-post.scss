@@ -34,4 +34,18 @@
         margin-bottom: 1rem;
         line-height: 2rem;
     }
+
+    code {
+        background-color: color('dark-background');
+        padding: 0.25rem
+    }
+
+    a {
+        color: color('accent');
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
