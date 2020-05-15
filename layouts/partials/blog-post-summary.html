@@ -6,7 +6,7 @@
 
         <h3>{{ .page.Params.tagline }}</h3>
 
-        <span class="date">{{ dateFormat "January 1, 2006" .page.Date }} &bull; {{ .page.ReadingTime }} minute read</span>
+        <span class="date">{{ .page.Date.Format "January 2, 2006" }} &bull; {{ .page.ReadingTime }} minute read</span>
     </div>
 
     {{ if .extended }}
