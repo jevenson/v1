@@ -34,4 +34,24 @@
         margin-bottom: 1rem;
         line-height: 2rem;
     }
+
+    code {
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 0.25rem;
+    }
+
+    img {
+        width: 100%;
+        box-shadow: 0.25rem 0.25rem 0.5rem color('gray');
+        border: 0.5rem solid color('accent');
+    }
+
+    a {
+        color: color('accent');
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
