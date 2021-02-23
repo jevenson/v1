@@ -5,6 +5,6 @@
 
 # Ideas
 https://tonsky.me/  
-https://tink.uk/
-https://ianramzy.com/
-https://isaaac.me/
+https://tink.uk/  
+https://ianramzy.com/  
+https://isaaac.me/  
