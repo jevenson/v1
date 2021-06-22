@@ -125,8 +125,8 @@
             transition: top 200ms;
         }
 
-        &.bhtp { color: color('bhtp'); }
-        &.bhtp::before { background-color: rgba(color('bhtp'), .20); }
+        &.hubspot { color: color('hubspot'); }
+        &.hubspot::before { background-color: rgba(color('hubspot'), .20); }
 
         &.cenwidev { color: color('cenwidev'); }
         &.cenwidev::before { background-color: rgba(color('cenwidev'), .20); }

@@ -8,3 +8,6 @@ https://tonsky.me/
 https://tink.uk/  
 https://ianramzy.com/  
 https://isaaac.me/  
+
+# Resources
+https://browserframe.com/
